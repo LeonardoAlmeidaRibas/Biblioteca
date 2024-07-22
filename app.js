@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')();
-const { create, read, update, destroy } = require("./main.js");
+const {livros, create, read, update, destroy} = require("./main.js");
 
 while (true) {
     console.log(`
@@ -10,7 +10,7 @@ while (true) {
         //     4. Remover um livro
         //     0. Sair
         //     `);
-    
+
     let opcao = prompt("Escolha uma opção: ");
     switch (opcao) {
         case ('1'):
@@ -68,7 +68,7 @@ while (true) {
     }
     }
 
-biblioteca.create({
+livros.create({
     nome: "Torre Negra",
     autor: "Stephen King",
     tamanho: 1000,

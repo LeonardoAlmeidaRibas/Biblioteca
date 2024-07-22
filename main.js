@@ -36,6 +36,7 @@ const destroy = indice => {
 }
 
 module.exports = {
+    livros,
     create,
     read,
     update,
